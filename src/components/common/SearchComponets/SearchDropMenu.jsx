@@ -1,23 +1,17 @@
 "use client"
 import React from 'react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "../ui/dropDownMenu";
-import { ChevronDown, Menu } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 
-const Dropdown = () => {
+const SearchDropMenu = () => {
     return (
         <>
 
             <DropdownMenu>
-                <DropdownMenuTrigger className='rounded-t-2xl min-w-[20rem] max-w-[80rem] w-auto bg-[#128E45] text-nowrap px-5 py-3 flex justify-between items-center gap-10 focus:outline-none text-xl text-white'>
-                    <div className="gap-4 flex">
-                        <span>
-                            <Menu />
-                        </span>
-                        All Products
-                    </div>
+                <DropdownMenuTrigger className='rounded-l-3xl bg-slate-100 text-nowrap px-5 py-3 flex gap-3 focus:outline-none text-lg'>All Products
                     <span>
-                        <ChevronDown className='text-lg' />
+                        <ChevronDown className='text-sm' />
                     </span>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className='bg-white w-full'>
@@ -31,4 +25,4 @@ const Dropdown = () => {
     )
 }
 
-export default Dropdown
+export default SearchDropMenu
