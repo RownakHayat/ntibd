@@ -1,6 +1,6 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
-import { Input } from '../../common/input'
+import SearchComponent from '../../common/SearchComponets/SearchComponents'
 
 const Navbar = () => {
     return (
@@ -26,7 +26,7 @@ const Navbar = () => {
                                 <img src="/assest/image/nti-logo.png" alt="" />
                             </div>
                             <div className="col-span-4">
-                            <Input />
+                            <SearchComponent />
                             </div>
                         </div>
                     </div>
