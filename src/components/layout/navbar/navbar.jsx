@@ -6,6 +6,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/f
 import { TfiYoutube } from "react-icons/tfi";
 import { RiPinterestFill } from "react-icons/ri";
 import NavHeader from '../../common/NavHeader/NavHeader';
+import UserProfile from '../../common/UserProfile/userProfile';
 
 const Navbar = () => {
     return (
@@ -47,9 +48,9 @@ const Navbar = () => {
                             </div>
                             <div className="col-span-2">
                                 <div className="flex justify-around mt-2">
-                                    <span>
-                                        <UserRound />
-                                        <p>Profile</p>
+                                    <span className=''>
+                                        
+                                        <UserProfile />
                                     </span>
                                     <span>
                                         <Heart />
@@ -65,7 +66,7 @@ const Navbar = () => {
                     </div>
                     <NavHeader />
                 </div>
-                
+
             </div>
         </>
     )
