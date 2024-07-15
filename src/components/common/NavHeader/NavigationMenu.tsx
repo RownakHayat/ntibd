@@ -14,26 +14,26 @@ const Navigationbar = () => {
     <>
       <NavigationMenu>
         <NavigationMenuList className="gap-4">
-          <NavigationMenuItem className="hover:text-green-600 cursor-pointer">
-            Home
+          <NavigationMenuItem>
+            <NavigationMenuLink className="hover:text-green-600 cursor-pointer" href="/">Home</NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className=" cursor-pointer">
-            Proprietor
+          <NavigationMenuItem>
+            <NavigationMenuLink className="hover:text-green-600 cursor-pointer" href="/proprietor">Proprietor</NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className=" cursor-pointer">
-            About Us
+          <NavigationMenuItem>
+            <NavigationMenuLink className="hover:text-green-600 cursor-pointer" href="about-us">About Us</NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className=" cursor-pointer">
-            Shop
+          <NavigationMenuItem>
+           <NavigationMenuLink className="hover:text-green-600 cursor-pointer" href="/shop"> Shop</NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className=" cursor-pointer">
-            Management
+          <NavigationMenuItem>
+            <NavigationMenuLink className="hover:text-green-600 cursor-pointer" href="/managment">Management</NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className=" cursor-pointer">
-            Blog
+          <NavigationMenuItem>
+            <NavigationMenuLink className="hover:text-green-600 cursor-pointer" href="/blog">Blog</NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className=" cursor-pointer">
-            Contact
+          <NavigationMenuItem>
+            <NavigationMenuLink className="hover:text-green-600 cursor-pointer" href="/contact">Contact</NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>

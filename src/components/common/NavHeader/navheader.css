@@ -1,0 +1,11 @@
+
+
+.call-support p::before {
+     content: "";
+     position: absolute;
+     background: url(/public/assest/image/icon-phone.png) no-repeat 0 0;
+     width: 32px;
+     height: 32px;
+     display: inline-block;
+     left: -3.5rem;
+ }
