@@ -10,8 +10,8 @@ import NavHeader from '../../common/NavHeader/NavHeader';
 const Navbar = () => {
     return (
         <>
-            <div className="header mx-18 ">
-                <div className="top_header my-2">
+            <div className="header">
+                <div className="top_header mx-20 my-2">
                     <div className="grid grid-rows-1 grid-cols-12">
                         <div className="col-span-8">
                             <Marquee>
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="nav_header mx-16">
+                <div className="nav_header mx-20">
                     <div className="grid grid-rows-1">
                         <div className="grid grid-cols-12">
                             <div className="col-span-4">
@@ -63,8 +63,9 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
+                    <NavHeader />
                 </div>
-                <NavHeader />
+                
             </div>
         </>
     )

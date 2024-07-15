@@ -9,7 +9,7 @@ const Dropdown = () => {
         <>
 
             <DropdownMenu>
-                <DropdownMenuTrigger className='rounded-t-2xl min-w-[20rem] max-w-[80rem] w-auto bg-[#128E45] text-nowrap px-5 py-3 flex justify-between items-center gap-10 focus:outline-none text-xl text-white'>
+                <DropdownMenuTrigger className='rounded-t-2xl min-w-[18rem] max-w-[80rem] w-auto bg-[#128E45] text-nowrap px-5 py-3 flex justify-between items-center gap-10 focus:outline-none text-xl text-white'>
                     <div className="gap-4 flex">
                         <span>
                             <Menu />
