@@ -10,7 +10,7 @@ import NavHeader from '../../common/NavHeader/NavHeader';
 const Navbar = () => {
     return (
         <>
-            <div className="header">
+            <div className="header bg-white fixed">
                 <div className="top_header mx-20 my-2">
                     <div className="grid grid-rows-1 grid-cols-12">
                         <div className="col-span-8">
