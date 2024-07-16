@@ -23,8 +23,8 @@ const UserProfile = () => {
                         <p>Sign Up or Login for a personalised</p>
                         <p>experience and faster checkout!</p>
                     </div>
-                    <Card className='p-3 uppercase text-lg font-bold bg-green-400 text-center'>
-                        <Link to="" className='hover:text-green-600 cursor-pointer'>Sign in</Link>
+                    <Card className='py-2 uppercase text-md font-semibold text-white bg-gradient-to-r from-green-500 to-emerald-500 text-center'>
+                        <Link to="/login" className='hover:text-green-600 cursor-pointer'>Sign in</Link>
                         <span>/</span>
                         <Link to="" className='hover:text-green-600 cursor-pointer'>Registion</Link>
                     </Card>
