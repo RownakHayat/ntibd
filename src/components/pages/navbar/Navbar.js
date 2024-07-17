@@ -13,7 +13,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 const Navbar = () => {
     return (
             <div className="header bg-white">
-                <div className="top_header my-2">
+                <div className="top_header mx-20 my-2">
                     <div className="grid grid-rows-1 grid-cols-12">
                         <div className="col-span-8">
                             <Marquee>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="nav_header">
+                <div className="nav_header mx-20">
                     <div className="grid grid-rows-1">
                         <div className="grid grid-cols-12">
                             <div className="col-span-4">
@@ -100,8 +100,8 @@ const Navbar = () => {
                             </NavigationMenu>
                         </div>
                         <div className="col-span-2">
-                            <div className="call-support float-right">
-                                <div className="text-xl">
+                            <div className="call-support float-right mr-2">
+                                <div className="text-xl ">
                                     <Link to="tel:01886221100" className='hover:text-blue-500 cursor-pointer'>01886221100</Link>
                                 </div>
                                 <p className='text-xl inline-block relative'><a href='https://wa.me/+8801841777904' className='block hover:text-green-600'>01841777904</a>
@@ -111,7 +111,6 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
     )
 }
