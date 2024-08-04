@@ -8,8 +8,8 @@ const CarouselHome = () => {
     let slides = [
         <div onClick={e => console.log(1)} >
             <div className="flex justify-evenly items-center">
-                <div className="items-center">
-                    <div onClick={e => console.log()} className='flex float-end justify-end mt-[50%]' >
+                <div className=" items-center">
+                    <div onClick={e => console.log()} className='shop_btn mt-[50%]' >
                         <Button className='bg-[#31a74c] hover:bg-[#212529] uppercase px-12 py-7 rounded-3xl text-xl font-normal'>Shope Now</Button>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const CarouselHome = () => {
         <div onClick={e => console.log(2)}>
             <div className="flex justify-evenly items-center">
                 <div className="items-center">
-                    <div onClick={e => console.log()} className='flex float-end justify-end mt-[50%]' >
+                    <div onClick={e => console.log()} className='shop_btn mt-[50%]' >
                         <Button className='bg-[#31a74c] hover:bg-[#212529] uppercase px-12 py-7 rounded-3xl text-xl font-normal'>Shope Now</Button>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const CarouselHome = () => {
         <div onClick={e => console.log(3)}>
             <div className="flex justify-around items-center">
                 <div className="items-center">
-                    <div onClick={e => console.log()} className='flex float-end justify-end mt-[50%]' >
+                    <div onClick={e => console.log()} className='shop_btn mt-[50%]' >
                         <Button className='bg-[#31a74c] hover:bg-[#212529] uppercase px-12 py-7 rounded-3xl text-xl font-normal'>Shope Now</Button>
                     </div>
                 </div>
