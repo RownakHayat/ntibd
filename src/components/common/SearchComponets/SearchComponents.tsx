@@ -31,7 +31,7 @@ const SearchComponents = ({ onSearch }: SearchComponentProps) => {
   };
 
   return (
-    <div className="relative rounded-3xl border border-gray-600 dark:border-gray-500 mt-2">
+    <div className=" rounded-3xl border border-gray-600 dark:border-gray-500 mt-2">
       <div className="grid grid-cols-12">
         <div className="col-span-4">
           <SearchDropMenu 

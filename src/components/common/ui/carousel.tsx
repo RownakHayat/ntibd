@@ -1,5 +1,6 @@
 "use client";
 
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import * as React from "react";
 
 interface ICarouselProps {
@@ -56,6 +57,8 @@ export default function Carousel(props: ICarouselProps): React.ReactElement {
 
   return (
     <div style={styles.container} className="animated-carousel-container ">
+
+      <button className="flex justify-center items-center mt-[18%] ml-2 float-left relative w-auto z-50 text-3xl"><ChevronLeft className=" text-3xl " /></button>
       {(props.slides || []).map((slide, index) => (
         <div
           key={index}
@@ -81,20 +84,23 @@ export default function Carousel(props: ICarouselProps): React.ReactElement {
           {props.slides.map((_, index) => (
             <button
               key={`${index}`}
-              className={`animated-carousel-dot ${
-                index === state.active ? "active" : ""
-              }`.trim()}
+              className={`animated-carousel-dot ${index === state.active ? "active" : ""
+                }`.trim()}
               onClick={() => dispatch({ type: "CUSTOM", index })}
             />
           ))}
         </div>
       )}
+      <button className="flex justify-center items-center float-right mt-[20%] mr-1 relative z-50 w-auto text-3xl"><ChevronRight className=" font-thin text-4xl" /></button>
+
     </div>
   );
 }
 
 const styles: { [key: string]: React.CSSProperties } = {
   container: {
+    // position: "relative",
+    overflow: "hidden",
     width: "100%",
     height: "100%",
   },
@@ -124,9 +130,8 @@ function getAnimationStyle({
   timingFunction?: string;
   animationDelay?: number;
 }): React.CSSProperties {
-  const transitionPostfix: string = `${(duration || 700) / 1000}s  ${
-    timingFunction || "cubic-bezier(0.1, 0.99, 0.1, 0.99)"
-  } ${(animationDelay || 100) / 1000}s`;
+  const transitionPostfix: string = `${(duration || 700) / 1000}s  ${timingFunction || "cubic-bezier(0.1, 0.99, 0.1, 0.99)"
+    } ${(animationDelay || 100) / 1000}s`;
   let style: React.CSSProperties;
 
   switch (animationType) {
